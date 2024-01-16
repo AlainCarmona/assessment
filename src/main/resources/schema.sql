@@ -14,6 +14,7 @@ CREATE TABLE Employee
     firstName VARCHAR(100) NOT NULL,
     lastName VARCHAR(100) NOT NULL,
     age INTEGER NOT NULL DEFAULT 18,
-    department varchar(20),
+    department int,
+    address varchar(100),
     FOREIGN KEY (department) REFERENCES Department(id)
 );
